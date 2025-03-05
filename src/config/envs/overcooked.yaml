@@ -1,23 +1,12 @@
 env: overcooked
+map_name: cramped_room  # Add this line to provide the map_name parameter
 
 env_args:
-  worker: null  # Will need to be loaded with a pre-trained worker
-  layout_name: "counter_circuit_o_1order"  # Default layout
-  time_limit: 400
-  shape_rewards: false
+  layout_name: cramped_room  # This is the actual parameter used by your env
+  worker_a_path: null
+  worker_b_path: null
+  horizon: 400
+  deterministic: false
   stack_frames: false
-  full_init: true
-  args:
-    horizon: 400
-    layout_names: ["counter_circuit_o_1order"]
-    encoding_fn: "OAI_egocentric"
-    num_stack: 1
-    device: "cpu"
-
-test_greedy: True
-test_nepisode: 32
-test_interval: 10000
-log_interval: 10000
-runner_log_interval: 10000
-learner_log_interval: 10000
-t_max: 2050000
+  enc_fn: OAI_egocentric
+  num_enc_channels: 27

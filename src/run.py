@@ -42,7 +42,11 @@ def run(_run, _config, _log):
     try:
         map_name = _config["env_args"]["map_name"]
     except:
-        map_name = _config["env_args"]["key"]
+        # Handle overcooked environment
+        if _config["env"] == "overcooked":
+            map_name = _config.get("map_name", _config["env_args"].get("layout_name", "unknown"))
+        else:
+            map_name = "unknown"
     unique_token = (
         f"{_config['name']}_seed{_config['seed']}_{map_name}_{datetime.datetime.now()}"
     )

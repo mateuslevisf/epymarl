@@ -110,7 +110,14 @@ if __name__ == "__main__":
     try:
         map_name = config_dict["env_args"]["map_name"]
     except:
-        map_name = config_dict["env_args"]["key"]
+        try:
+            map_name = config_dict["env_args"]["key"]
+        except:
+            # Handle overcooked environment
+            if config_dict["env"] == "overcooked":
+                map_name = config_dict.get("map_name", config_dict["env_args"].get("layout_name", "unknown"))
+            else:
+                map_name = "unknown"
 
     # now add all the config to sacred
     ex.add_config(config_dict)
