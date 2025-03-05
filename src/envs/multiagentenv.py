@@ -1,4 +1,7 @@
 class MultiAgentEnv(object):
+    n_agents = None
+    episode_limit = None
+
     def step(self, actions):
         """Returns obss, reward, terminated, truncated, info"""
         raise NotImplementedError
