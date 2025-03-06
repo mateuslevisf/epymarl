@@ -1,10 +1,13 @@
 env: overcooked
-map_name: cramped_room  # Add this line to provide the map_name parameter
+map_name: cramped_room
+runner: "episode" # Runs 1 env for an episode
+batch_size: 1
+batch_size_run: 1
 
 env_args:
-  layout_name: cramped_room  # This is the actual parameter used by your env
-  worker_a_path: null
-  worker_b_path: null
+  layout_name: cramped_room
+  worker_a_path: null  # Will use default from env_fn if null
+  worker_b_path: null  # Will use default from env_fn if null
   horizon: 400
   deterministic: false
   stack_frames: false
