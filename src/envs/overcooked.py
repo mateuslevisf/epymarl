@@ -16,9 +16,9 @@ if parent_dir not in sys.path:
     sys.path.append(parent_dir)
 
 # Print paths for debugging
-print(f"Current directory: {os.getcwd()}")
-print(f"Looking for mahaha in: {parent_dir}")
-print(f"Python path: {sys.path}")
+# print(f"Current directory: {os.getcwd()}")
+# print(f"Looking for mahaha in: {parent_dir}")
+# print(f"Python path: {sys.path}")
 
 def env_fn(**kwargs):
     """
