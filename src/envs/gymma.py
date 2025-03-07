@@ -8,7 +8,7 @@ import numpy as np
 
 from .multiagentenv import MultiAgentEnv
 from .wrappers import FlattenObservation
-import envs.pretrained as pretrained  # noqa
+# import envs.pretrained as pretrained  # noqa
 
 # try:
 #     from .pz_wrapper import PettingZooWrapper  # noqa
@@ -40,8 +40,8 @@ class GymmaWrapper(MultiAgentEnv):
         self._env = TimeLimit(self._env, max_episode_steps=time_limit)
         self._env = FlattenObservation(self._env)
 
-        if pretrained_wrapper:
-            self._env = getattr(pretrained, pretrained_wrapper)(self._env)
+        # if pretrained_wrapper:
+        #     self._env = getattr(pretrained, pretrained_wrapper)(self._env)
 
         self.n_agents = self._env.unwrapped.n_agents
         self.episode_limit = time_limit
