@@ -13,3 +13,4 @@ env_args:
   stack_frames: false
   enc_fn: OAI_egocentric
   num_enc_channels: 27
+  unknown_subtask_penalty: 0
