@@ -43,7 +43,7 @@
       ]
     ]
   },
-  "heartbeat": "2025-03-07T19:50:54.324033",
+  "heartbeat": "2025-03-09T14:54:53.569971",
   "host": {
     "ENV": {},
     "cpu": "Apple M4 Max",
@@ -98,5 +98,6 @@
   "resources": [],
   "result": null,
   "start_time": "2025-03-07T19:50:24.300336",
-  "status": "RUNNING"
+  "status": "COMPLETED",
+  "stop_time": "2025-03-09T14:54:52.458768"
 }
