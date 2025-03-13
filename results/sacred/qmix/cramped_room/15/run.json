@@ -13,17 +13,17 @@
     "name": "pymarl",
     "repositories": [
       {
-        "commit": "8bd6494a381ff7574d750ef83d425f4b3531c313",
+        "commit": "df4c3e91389eb3cdcc74d40958c4b3de18a79d17",
         "dirty": true,
         "url": "https://github.com/mateuslevisf/epymarl.git"
       },
       {
-        "commit": "8bd6494a381ff7574d750ef83d425f4b3531c313",
+        "commit": "df4c3e91389eb3cdcc74d40958c4b3de18a79d17",
         "dirty": true,
         "url": "https://github.com/mateuslevisf/epymarl.git"
       },
       {
-        "commit": "8bd6494a381ff7574d750ef83d425f4b3531c313",
+        "commit": "df4c3e91389eb3cdcc74d40958c4b3de18a79d17",
         "dirty": true,
         "url": "https://github.com/mateuslevisf/epymarl.git"
       }
@@ -43,7 +43,7 @@
       ]
     ]
   },
-  "heartbeat": "2025-03-07T18:47:21.120430",
+  "heartbeat": "2025-03-13T14:44:17.861840",
   "host": {
     "ENV": {},
     "cpu": "Apple M4 Max",
@@ -56,12 +56,7 @@
   },
   "meta": {
     "command": "my_main",
-    "config_updates": {
-      "batch_size": 1,
-      "batch_size_run": 1,
-      "runner": "episode",
-      "test_nepisode": 1
-    },
+    "config_updates": {},
     "named_configs": [],
     "options": {
       "--beat-interval": null,
@@ -85,19 +80,13 @@
       "--tiny_db": null,
       "--unobserved": false,
       "COMMAND": null,
-      "UPDATE": [
-        "runner=episode",
-        "batch_size=1",
-        "batch_size_run=1",
-        "test_nepisode=1"
-      ],
+      "UPDATE": [],
       "help": false,
-      "with": true
+      "with": false
     }
   },
   "resources": [],
   "result": null,
-  "start_time": "2025-03-07T18:34:36.646803",
-  "status": "INTERRUPTED",
-  "stop_time": "2025-03-07T18:47:21.135756"
+  "start_time": "2025-03-12T17:09:09.889313",
+  "status": "RUNNING"
 }

@@ -4,7 +4,7 @@
 action_selector: "epsilon_greedy"
 epsilon_start: 1.0
 epsilon_finish: 0.05
-epsilon_anneal_time: 50000
+epsilon_anneal_time: 500000
 evaluation_epsilon: 0.0
 
 runner: "episode"
@@ -12,7 +12,7 @@ runner: "episode"
 buffer_size: 5000
 
 # update the target network every {} episodes
-target_update_interval_or_tau: 200
+target_update_interval_or_tau: 20
 
 
 obs_agent_id: True
@@ -31,6 +31,6 @@ mixer: "qmix"
 use_rnn: False
 mixing_embed_dim: 32
 hypernet_layers: 2
-hypernet_embed: 64
+hypernet_embed: 32
 
 name: "qmix"

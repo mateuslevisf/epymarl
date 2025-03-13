@@ -1,8 +1,6 @@
 env: overcooked
 map_name: cramped_room
 runner: "episode" # Runs 1 env for an episode
-batch_size: 1
-batch_size_run: 1
 
 env_args:
   layout_name: cramped_room
