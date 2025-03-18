@@ -1,9 +1,16 @@
 env: overcooked
-map_name: cramped_room
+map_name: counter_circuit_o_1order
 runner: "episode" # Runs 1 env for an episode
+batch_size: 1
+batch_size_run: 1
+test_nepisode: 20
+save_model_interval: 50000
+grad_norm_clip: 5
+lr: 0.0001
+t_max: 2000000 #1/10 of the original t_max 20050000
 
 env_args:
-  layout_name: cramped_room
+  layout_name: counter_circuit_o_1order
   worker_a_path: null  # Will use default from env_fn if null
   worker_b_path: null  # Will use default from env_fn if null
   horizon: 400
